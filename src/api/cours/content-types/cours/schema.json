@@ -31,11 +31,6 @@
         "videos",
         "audios"
       ]
-    },
-    "reservations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::reservation.reservation"
     }
   }
 }
