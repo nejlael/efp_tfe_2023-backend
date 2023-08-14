@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "reservation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numeroClient": {
+      "type": "biginteger"
+    },
+    "cours": {
+      "type": "string"
+    },
+    "dateReservation": {
+      "type": "datetime"
+    },
+    "reservationID": {
+      "type": "uid"
+    }
+  }
+}

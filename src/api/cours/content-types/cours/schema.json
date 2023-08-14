@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cours_collectifs",
+  "info": {
+    "singularName": "cours",
+    "pluralName": "cours-collectifs",
+    "displayName": "Cours-collectifs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Horaire": {
+      "type": "time"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation"
+    }
+  }
+}
